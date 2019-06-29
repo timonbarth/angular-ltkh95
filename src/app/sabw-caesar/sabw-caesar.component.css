@@ -7,6 +7,8 @@
 }
 
 #scheibeklein{
+  border: 1px solid black;
+  transform: rotate(-41.53846153846154deg);
    width: 350px;
    position: 
    absolute;
