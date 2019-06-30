@@ -9,7 +9,7 @@
 #scheibeklein{
   /*border: 1px solid black;*/
   /*transform: rotate(-41.53846153846153846153846*/
-  
+   transition: all 2s;
    width: 350px;
    position: 
    absolute;
