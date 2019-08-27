@@ -14,6 +14,10 @@ export class FermatTestComponent implements OnInit {
 
  constructor() { }
 
+ fermattest() {
+   ergebnis = 'starte test';
+ }
+
   ngOnInit() {
   }
 
