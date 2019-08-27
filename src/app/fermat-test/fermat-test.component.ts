@@ -23,7 +23,7 @@ export class FermatTestComponent implements OnInit {
    zwischenergebnis = zwischenergebnis * zeuge
    }
   zwischenergebnis = zwischenergebnis % this.versuchskaninchen;
-  this.ergebnis = 'zwischenergebnis: ' + zwischenergebnis
+  this.ergebnis = 'Zwischenergebnis: ' + zwischenergebnis
  }
 
 
