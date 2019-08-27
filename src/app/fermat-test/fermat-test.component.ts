@@ -17,6 +17,8 @@ export class FermatTestComponent implements OnInit {
  fermattest() {
    let zeuge = 2;
    //Berechne zeuge^(versuchskaninchen-1) modulo versuchskaninchen
+   let zwischenergebnis = 1;
+   for (let i = 0; i < 5; i++) {}
  }
 
   ngOnInit() {
