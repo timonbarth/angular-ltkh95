@@ -20,9 +20,14 @@ export class FermatTestComponent implements OnInit {
    let zwischenergebnis = 1;
    for (let i = 0; i < this.versuchskaninchen-1; i++) {
 
-   zwischenergebnis = zwischenergebnis * zeuge
+   zwischenergebnis = zwischenergebnis * zeuge;
    }
   zwischenergebnis = zwischenergebnis % this.versuchskaninchen;
+  if (zwischenergebnis === 1)  {
+   this.ergebnis += 'Zeuge ' + zeuge +  ' OK... ';
+  } else {
+    this.ergebnis += 'Zeuge ' + zeuge + ' Nicht OK... ';
+  }
   this.ergebnis = 'Zwischenergebnis: ' + zwischenergebnis
  }
 
