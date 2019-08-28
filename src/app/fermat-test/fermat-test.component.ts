@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FermatTestComponent implements OnInit {
   versuchskaninchen: number = 13;
 
-  anzahl: number = 5;
+  anzahl: number = 3;
 
   ergebnis = 'noch nicht berechnet';
 
@@ -35,12 +35,12 @@ export class FermatTestComponent implements OnInit {
         this.ergebnis += 'Zeuge ' + zeuge + ' OK... ';
       } else {
         this.ergebnis += 'Zeuge ' + zeuge + ' Nicht OK... ';
-        endergebnis = false
+        endergebnis = false;
       }
     }
 
     if(endergebnis === true) {
-      this ergebnis += 'Test bestanden';
+      this.ergebnis += 'Test bestanden';
     }
     else {
       this.ergebnis += 'Test nicht bestanden';
