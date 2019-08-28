@@ -22,13 +22,13 @@ export class FermatTestComponent implements OnInit {
 
     for (let zeuge = 2; zeuge < this.anzahl + 2; zeuge++) {
 
-
-
       //Berechne zeuge^(versuchskaninchen-1) modulo versuchskaninchen
       let zwischenergebnis = 1;
       for (let i = 0; i < this.versuchskaninchen - 1; i++) {
 
         zwischenergebnis = zwischenergebnis * zeuge;
+        zwischenergebnis = zwischenergebnis %
+        this.versuchskaninchen;
       }
       zwischenergebnis = zwischenergebnis % this.versuchskaninchen;
       if (zwischenergebnis === 1) {
